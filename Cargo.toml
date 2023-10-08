@@ -26,7 +26,8 @@ opt-level = 3
 all-features = true
 
 [dependencies]
-miniquad = { version = "=0.4.0-alpha.10", features = ["log-impl"] }
+miniquad = { path = '../miniquad-test', features = ["log-impl"] }
+#miniquad = { version = "=0.4.0-alpha.10", features = ["log-impl"] }
 quad-rand = "0.2.1"
 glam = {version = "0.21", features = ["scalar-math"] }
 image = { version = "0.24", default-features = false, features = ["png", "tga"] }
@@ -50,5 +51,4 @@ macroquad-platformer = { path = "./physics-platformer" }
 macroquad = { path = './' }
 
 #quad-snd = {path = '../quad-snd'}
-#miniquad = { path = '../miniquad' }
 #quad-gl = {path = './quad-gl'}
